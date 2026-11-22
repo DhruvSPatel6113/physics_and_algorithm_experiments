@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Physics & Algorithm Experiments | Dhruv Patel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 40px 20px; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 2.2rem; color: #38bdf8; margin-bottom: 8px; }
+    p.lead { color: #94a3b8; font-size: 1.1rem; margin-bottom: 32px; }
+    .chapter { margin-bottom: 32px; background: #1e293b; padding: 24px; border-radius: 12px; border: 1px solid #334155; }
+    .chapter h2 { font-size: 1.3rem; color: #f1f5f9; margin-bottom: 16px; border-bottom: 1px solid #334155; padding-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: #0f172a; padding: 16px; border-radius: 8px; border: 1px solid #334155; transition: transform 0.2s, border-color 0.2s; }
+    .card:hover { transform: translateY(-3px); border-color: #38bdf8; }
+    .card h3 { font-size: 1.05rem; color: #e2e8f0; margin-bottom: 6px; }
+    .card p { font-size: 0.85rem; color: #94a3b8; margin-bottom: 12px; }
+    .btn { display: inline-block; padding: 6px 14px; background: #0284c7; color: white; text-decoration: none; border-radius: 6px; font-size: 0.85rem; font-weight: 500; }
+    .btn:hover { background: #0369a1; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔬 Physics & Algorithm Experiments</h1>
+    <p class="lead">Interactive sandbox collection exploring classical mechanics, rigid-body constraints, particle systems, and collision algorithms built with Matter.js and p5.js.</p>
+
+    <div class="chapter">
+      <h2>01. Collision Detection Algorithms</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>AABB Collision Intersection</h3>
+          <p>Axis-Aligned Bounding Box intersection algorithm testing rectangular overlaps and vector bounces.</p>
+          <a class="btn" href="01_collision_algorithms/aabb_intersection/index.html">Run Experiment &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Matter.js Collision Sandbox</h3>
+          <p>Rigid body collision callbacks and boundary bounce mechanics.</p>
+          <a class="btn" href="01_collision_algorithms/matterjs_collision_sandbox/index.html">Run Experiment &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>02. Ballistics & Impact Deformation</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Car Crash Kinetic Deformation</h3>
+          <p>Simulates vehicle mass and velocity impact against static deformation barriers.</p>
+          <a class="btn" href="02_ballistics_and_impact/car_crash_deformation/index.html">Run Experiment &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Bullet Velocity vs. Thickness</h3>
+          <p>Ballistic penetration algorithm calculating material thickness resistance.</p>
+          <a class="btn" href="02_ballistics_and_impact/bullet_penetration/index.html">Run Experiment &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>03. Rigid Body Dynamics & Stability</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Matter.js World Setup</h3>
+          <p>Static ground planes, gravity vectors, and restitution coefficients.</p>
+          <a class="btn" href="03_rigid_body_mechanics/matterjs_world_setup/index.html">Run Experiment &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Bouncy Ball Restitution</h3>
+          <p>Elasticity tuning and gravitational damping on bouncing spheres.</p>
+          <a class="btn" href="03_rigid_body_mechanics/bouncy_ball_restitution/index.html">Run Experiment &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Toppling Boxes Stack</h3>
+          <p>Center-of-mass balance testing on multi-layer rigid body towers.</p>
+          <a class="btn" href="03_rigid_body_mechanics/toppling_boxes_stack/index.html">Run Experiment &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>04. Pendulums & Momentum Conservation</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Newton's Cradle (Classic)</h3>
+          <p>Momentum transfer across suspended elastic spheres with linear constraints.</p>
+          <a class="btn" href="04_pendulums_and_constraints/newton_cradle_classic/index.html">Run Experiment &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Newton's Cradle (5 Bobs)</h3>
+          <p>Matter.Constraint 5-bob harmonic pendulum simulation.</p>
+          <a class="btn" href="04_pendulums_and_constraints/newton_cradle_5bobs/index.html">Run Experiment &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <h2>05. Projectile Trajectories</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Crumpled Ball Launch</h3>
+          <p>Parabolic launch impulse with ground friction and restitution.</p>
+          <a class="btn" href="05_projectile_trajectories/crumpled_balls_parabola/index.html">Run Experiment &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Paper Ball Trash Toss</h3>
+          <p>Interactive toss trajectory with static boundary goal detection.</p>
+          <a class="btn" href="05_projectile_trajectories/paper_ball_trash_toss/index.html">Run Experiment &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  </div>
+</body>
+</html>
